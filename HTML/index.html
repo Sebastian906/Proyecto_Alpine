@@ -8,14 +8,24 @@
 </head>
 <body>
 
-    <header class="flex items-center justify-between px-8 bg-gray-800 h-20 text-white">
+    <header class="flex items-center justify-between px-8 bg-gray-800 h-20 text-white sticky top-0 z-50">
         <logo>
             <a class="flex items-center gap-1" href="">
                 <img class="h-8 -mt-1" src="https://img.icons8.com/small/64/ffffff/fire-heart.png" alt="fire-heart"/>
                 <span>Alpine.js</span>
             </a>
         </logo>
-        <nav>Navigation</nav>
+        <nav>
+            <ul class="flex items-center [&>li>a]:h-12 [&>li>a]:px-4 [&>li>a:hover]:bg-gray-700 [&>li>a]:rounded-lg">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Crear publicación</a></li>
+                <li><a class="flex items-center gap-2" href="">
+                    <img class="h-8 rounded-full object-cover bg-blue-200" src="https://img.icons8.com/fluency-systems-regular/96/user--v1.png" alt="user--v1"/>
+                    Usuario
+                    <img class="w-4" src="https://img.icons8.com/windows/64/94a3b8/expand-arrow--v1.png" alt="expand-arrow--v1"/>
+                </a></li>
+            </ul>
+        </nav>
     </header>
     
 </body>
